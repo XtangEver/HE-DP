@@ -1,0 +1,19 @@
+{
+    "module_path":  "federatedml/linear_model/poisson_regression/hetero_poisson_dp_regression",
+    "param_class" : "federatedml/param/poisson_dp_regression_param.py/PoissonDpParam",
+    "role":
+    {
+        "guest":
+        {
+            "program": "hetero_poisson_dp_guest.py/PoissonDpGuest"
+        },
+        "host":
+        {
+            "program": "hetero_poisson_dp_host.py/PoissonDpHost"
+        },
+        "arbiter":
+        {
+            "program": "hetero_poisson_dp_arbiter.py/PoissonDpArbiter"
+        }
+    }
+}
