@@ -1,0 +1,19 @@
+{
+    "module_path":  "federatedml/linear_model/linear_regression/hetero_linear_regression_dp",
+    "param_class" : "federatedml/param/poisson_dp_regression_param.py/PoissonDpParam",
+    "role":
+    {
+        "guest":
+        {
+            "program": "hetero_linr_dp_guest.py/LinearRDpGuest"
+        },
+        "host":
+        {
+            "program": "hetero_linr_dp_host.py/LinearRDpHost"
+        },
+        "arbiter":
+        {
+            "program": "hetero_linr_dp_arbiter.py/LinearRDpArbiter"
+        }
+    }
+}
